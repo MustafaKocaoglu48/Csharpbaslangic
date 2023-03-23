@@ -87,3 +87,85 @@ namespace İlk_uygulama1
     }
 }
 ````
+### Klavyeden girilen 2 sayının toplamı
+````
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen toplama işlemi için ilk sayıyı giriniz.");
+            int ilk_sayi=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen toplama işlemi için 2. sayıyı giriniz");
+            int ikinci_sayi = Convert.ToInt32(Console.ReadLine());
+
+            int toplam = ilk_sayi + ikinci_sayi;
+            Console.WriteLine("Girilen sayıların toplamı:" + toplam);
+            
+            Console.ReadLine(); ;
+
+        }
+    }
+}
+````
+### İki sayının toplamı
+````
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int ilk_sayi = 10;
+            int ikinci_sayi=20;
+            int toplam = ilk_sayi + ikinci_sayi;
+            Console.WriteLine("Sayıların toplamı:" + toplam);
+            Console.ReadLine(); ;
+
+        }
+    }
+}
+
+````
+### Vize ve final notuna göre genel ortalama hesaplayan program
+````
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen vize notunuzu giriniz:");
+            int vize = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen final notunuzu giriniz:");
+            int final= Convert.ToInt32(Console.ReadLine());
+
+            double ortalama = vize * 0.4 + final * 0.6;
+            Console.WriteLine("Genel ortalamanız:" + ortalama);
+            Console.ReadLine(); ;
+
+        }
+    }
+}
+
+````
