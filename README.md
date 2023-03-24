@@ -574,6 +574,29 @@ namespace İlk_uygulama1
     }
 }
 ````
+### Klavyeden girilen sayının kaç basamaklı olduğunu ekrana yazan programı yazınız.
+````
+using System;
 
 
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen bir sayı giriniz:");
+            double sayi = Convert.ToInt32(Console.ReadLine());
+            int sayac = 0;
+            while (sayi >1)
+            {
+              sayi/=10;
+                sayac++;
+            }
+            Console.WriteLine("Girilen sayı " + sayac + " basamaklıdır.");
 
+            Console.ReadLine();
+        }
+    }
+}
+````
