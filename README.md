@@ -389,5 +389,32 @@ namespace İlk_uygulama1
     }
 }
 ````
+### Klavyeden girilen 10 adet sayıdan çift olanların toplamını ekrana yazdıran program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int toplam = 0;
+          for(int i = 0; i < 10; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                if (sayi % 2 == 0)
+                {
+                    toplam += sayi;
+                }
+              
+            }Console.WriteLine(toplam);
+            Console.ReadLine();
+        }
+    }
+}
+````
+
 
 
