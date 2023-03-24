@@ -255,3 +255,139 @@ namespace İlk_uygulama1
 }
 
 ````
+### do-While döngüsü ile adımızı 10 defa ekrana ayzan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int i = 0;
+            do
+            {
+                Console.WriteLine("Mustafa");
+                i++;
+            } while (i < 5);
+            Console.ReadLine();
+        }
+    }
+}
+````
+### for döngüsü ile adımızı ekrana 10 defa yazan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+          for(int i=0;i<10;i++)
+            {
+                Console.WriteLine("Mustafa");
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+````
+### 1-100 arasında 7 ile bölünebilen sayıları ekrana yazan program
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+          for(int i=1;i<100;i++)
+            {
+                if (i % 7 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
+````
+### 1-20 arasındaki sayıların toplamını bulan program
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int toplam = 0;
+          for(int i=1;i<=20;i++)
+            {
+                toplam += i;
+            }Console.WriteLine(toplam);
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden girilen 20 adet sayının toplamını veren program
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int toplam = 0;
+          for(int i = 0; i < 20; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                toplam += sayi;
+            }Console.WriteLine(toplam);
+            Console.ReadLine();
+        }
+    }
+}
+
+````
+### Klavyeden girilen 10 adet sayının çift olanları yazan ve kaç adet olduğunu bulan program
+````
+using System;
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int toplam = 0;
+          for(int i = 0; i < 10; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                if (sayi % 2 == 0)
+                {
+                    Console.WriteLine(sayi);
+                }
+              
+            }
+            Console.ReadLine();
+        }
+    }
+}
+````
+
+
