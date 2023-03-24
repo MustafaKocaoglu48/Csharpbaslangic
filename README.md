@@ -169,3 +169,89 @@ namespace İlk_uygulama1
 }
 
 ````
+### Klavyeden alınan ürün fiyatına göre kdvli fiyatı ekrana yazan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            double kdvli_fiyat, normal_fiyat;
+            Console.WriteLine("Lütfen ürünün fiyatını giriniz:");
+            normal_fiyat=Convert.ToDouble(Console.ReadLine());
+            kdvli_fiyat = 0.18 * normal_fiyat + normal_fiyat;
+            Console.WriteLine("Ürünün kdvli fiyatı:" + kdvli_fiyat);
+
+        }
+    }
+}
+````
+### Klavyeden girilen değerleri klavyeden girilen değerlere göre 4 işlem yapan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen bir sayı giriniz:");
+            double ilk_sayi=Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen ikinci bir sayı daha giriniz:");
+            double ikinci_sayi = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen yapmak istediğiniz işlemi seçiniz:" +
+                "1-Toplama" +
+                "2-Çıkarma" +
+                "3-Çarpma" +
+                "4-Bölme");
+            double secilen=Convert.ToInt32(Console.ReadLine());
+            if (secilen == 1)
+            {
+                Console.WriteLine("İşleminizin sonucu:"+ilk_sayi + ikinci_sayi);
+
+            }else if (secilen == 2)
+            {
+                Console.WriteLine("İşleminizin sonucu:" +(ilk_sayi-ikinci_sayi));
+            }else if(secilen == 3) { 
+            Console.WriteLine("İşleminizin sonucu:" + ilk_sayi *ikinci_sayi);
+            }
+            else
+            {
+                Console.WriteLine("İşleminizin sonucu:" + ilk_sayi / ikinci_sayi);
+            }
+
+        }
+    }
+}
+
+````
+### While döngüsü ile adımızı 10 defa ekrana ayzan program.
+````
+
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int i = 0;
+            while(i<10)
+            {
+                Console.WriteLine("Mustafa");
+                i++;
+            }
+            Console.ReadLine();
+        }
+    }
+}
+
+````
