@@ -415,6 +415,165 @@ namespace İlk_uygulama1
     }
 }
 ````
+### Klavyeden girilen 10 adet sayıdan en büyüğünü bulan programı yazınız.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int enb = 0;
+            for(int i=0;  i < 10; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                if (enb < sayi)
+                {
+                    enb = sayi;
+                }
+            }Console.WriteLine("Girilen 10 adet sayıdan en büyüğü:" + enb);
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden girilen 10 adet sayıdan en küçüğğünü bulan program.
+````
+using System;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int enk = Int32.MaxValue;
+            for(int i=0;  i < 10; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                if (enk > sayi)
+                {
+                    enk = sayi;
+                }
+            }Console.WriteLine("Girilen 10 adet sayıdan en küçüğü:" + enk);
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden girilen 10 adet sayının ortalamsını bulan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            double toplam = 0.0;
+            for(int i=0;  i < 10; i++)
+            {
+                int sayi=Convert.ToInt32(Console.ReadLine());
+                toplam += sayi;
+            }
+            double ortalama = toplam / 10;
+            Console.WriteLine("Girilen 10 adet sayının ortalaması:" + ortalama);
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden girilen bir string değeri ters şekilde yazan program.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen ters yazılmasını istediğiniz bir string giriniz:");
+            string kelime = Console.ReadLine();
+            for(int i=kelime.Length-1; i>=0; i--)
+            {
+                Console.WriteLine(kelime[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden girirlen string içinde yanyana 2 tane aa karakteri olan varsa kaç tane olduğunu yazan programı yazınız.
+```` 
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            int sayac = 0;
+            Console.WriteLine("Lütfen bir string giriniz:");
+            string kelime = Console.ReadLine();
+            for(int i=0;i<kelime.Length-1;i++) {
+                if (kelime[i] =='a' && kelime[i + 1] == 'a')
+                {
+                    sayac++;
+                }
+            }
+            Console.WriteLine("Girilen stringte toplam " + sayac + " tane aa vardır.");
+            Console.ReadLine();
+        }
+    }
+}
+````
+### Klavyeden 2 tane string giriliyor bu girilen stringlerin aynı indisindeki değerler aynı olanları yazan programı yazınız.
+````
+using System;
+
+
+namespace İlk_uygulama1
+{
+    internal class Program
+    {
+          static void Main(string[] args)
+        {
+            Console.WriteLine("Lütfen iki adet string giriniz:");
+            string kelime=Console.ReadLine();
+            string kelime1=Console.ReadLine();
+
+            int uzunluk = 0;
+            if (kelime.Length <= kelime1.Length)
+            {
+                uzunluk=kelime.Length;
+            }
+            else
+            {
+                uzunluk=kelime1.Length;
+            }
+            for(int i = 0; i < uzunluk; i++)
+            {
+                if (kelime[i] == kelime1[i])
+                {
+                    Console.WriteLine(kelime[i]);
+                }
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
+````
 
 
 
